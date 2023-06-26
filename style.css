@@ -1,0 +1,37 @@
+:root {
+    --grid-cells: 1;
+}
+
+body {
+    display: flex;
+    width: auto;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+#container {
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-cells), 1fr);
+    grid-template-rows: repeat(var(--grid-cells), 1fr);
+    background-color: white;
+}
+
+#container > div {
+    border: 1px solid black;
+
+}
+
+.text-content {
+    font-family:cursive;
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
